@@ -5,10 +5,8 @@ public:
         map<int,int> mp;
         for(auto &it : nums){
             mp[it]++;
-        }
-        for(auto &it : mp){
-            if(it.second==n){
-                return it.first;
+            if(mp[it]==n){
+                return it;
             }
         }
         return -1;
