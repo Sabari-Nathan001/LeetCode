@@ -12,7 +12,6 @@ public:
             }
             j++;
         }
-
         return c;
     }
 };
