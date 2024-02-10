@@ -7,8 +7,15 @@ public:
         }
         return total;
     }
+    int MaxEle(vector<int> &piles){
+        int maxi=INT_MIN;
+        for(auto pile : piles){
+            maxi=max(maxi,pile);
+        }
+        return maxi;
+    }
     int minEatingSpeed(vector<int>& piles,int h){
-        int low=1,high=*max_element(piles.begin(),piles.end());
+        int low=1,high=MaxEle(piles);
         while(low<=high){
             int mid=low+(high-low)/2;
             long res=Days(piles,mid);
