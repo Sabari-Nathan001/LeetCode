@@ -11,9 +11,6 @@ class Solution {
                 arrows++;
                 end=points[i][1];
             }
-            else{
-                
-            }
         }
         return arrows;
     }
