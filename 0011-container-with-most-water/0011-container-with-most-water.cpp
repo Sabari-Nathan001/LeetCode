@@ -12,13 +12,8 @@ public:
             maxi=max(maxi,area);
             if(height[left]<height[right])
                 left++;
-            else if(height[left]>height[right])
-                right--;
             else
-            {
-                left++;
                 right--;
-            }
         }
         return maxi;
     }
