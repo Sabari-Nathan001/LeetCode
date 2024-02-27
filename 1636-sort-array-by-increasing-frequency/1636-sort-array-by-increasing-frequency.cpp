@@ -1,0 +1,16 @@
+class Solution {
+public:
+    vector<int> frequencySort(vector<int>& nums) {
+        map<int,int> mp;
+        for(auto it : nums){
+            mp[it]++;
+        }
+        sort(nums.begin(),nums.end(),[&](int a,int b){
+            if(mp[a]==mp[b]) 
+                return a>b;
+            else 
+                return mp[a]<mp[b];
+        });
+        return nums;
+    }
+};
