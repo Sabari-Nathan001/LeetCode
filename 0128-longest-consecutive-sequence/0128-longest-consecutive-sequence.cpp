@@ -18,6 +18,6 @@ public:
             }
             res=max(res,c);
         }
-        return res==INT_MIN?0:res;
+        return res;
     }
 };
