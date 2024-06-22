@@ -9,7 +9,7 @@ public:
             while(num>0)
             {
                 sum+=num%2;
-                num=num/2;
+                num/=2;
             }
             v.push_back(sum);
         }
