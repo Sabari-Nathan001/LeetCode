@@ -1,9 +1,3 @@
-#include <vector>
-#include <algorithm>
-#include <iostream>
-
-using namespace std;
-
 class Solution {
 public:
     void merge(vector<int> &arr, vector<int> &indices, vector<int> &count, int low, int mid, int high) {
