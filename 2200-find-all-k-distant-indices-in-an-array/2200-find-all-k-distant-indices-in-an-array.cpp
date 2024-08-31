@@ -1,18 +1,16 @@
 class Solution {
 public:
     vector<int> findKDistantIndices(vector<int>& nums, int key, int k) {
-        set<int> st;
-        vector<int> v;
+        vector<int> ans;
         for(int i=0;i<nums.size();i++){
+            int a = -1;
             for(int j=0;j<nums.size();j++){
-                if(abs(i-j)<=k && nums[j]==key){
-                    st.insert(i);
-                }
+                if(abs(i-j)<=k && nums[j]==key)
+                 a=i;
             }
+            if(a!=-1) 
+            ans.push_back(a);
         }
-        for(auto it : st){
-            v.push_back(it);
-        }
-        return v;
+        return ans;
     }
 };
