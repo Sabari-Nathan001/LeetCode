@@ -1,13 +1,13 @@
 class Solution {
     public:
     int solve(int i,int j,string &s,string &p,vector<vector<int>>&dp){
-        if(i < 0 && j < 0){
+        if(i<0 && j<0){
             return 1;
         }
-        if(j < 0 && i>=0){
+        if(j<0 && i>=0){
             return 0;
         }
-        if(i < 0 && j>=0){
+        if(i<0 && j>=0){
             for(int ind=0;ind<=j;ind++){
                 if(p[ind]!='*'){
                     return 0;
