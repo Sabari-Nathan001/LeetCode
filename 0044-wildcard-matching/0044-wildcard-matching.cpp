@@ -7,7 +7,7 @@ class Solution {
         if(j < 0 && i>=0){
             return 0;
         }
-        if(i < 0){
+        if(i < 0 && j>=0){
             for(int ind=0;ind<=j;ind++){
                 if(p[ind]!='*'){
                     return 0;
