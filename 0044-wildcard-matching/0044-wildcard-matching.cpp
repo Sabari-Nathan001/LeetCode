@@ -4,7 +4,7 @@ class Solution {
         if(i < 0 && j < 0){
             return 1;
         }
-        if(j < 0){
+        if(j < 0 && i>=0){
             return 0;
         }
         if(i < 0){
